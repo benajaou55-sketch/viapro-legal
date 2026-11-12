@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie & Local Storage Policy — Savevia Pro</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#FFFFFF; color:#000000; margin:0; padding:0; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 32px 20px 60px; }
+  h1 { color:#000000; font-size: 26px; margin-bottom: 4px; }
+  hr.top { border:none; border-top:2px solid #000000; margin-bottom: 24px; }
+  h2 { background:#000000; color:#FFFFFF; font-size:16px; padding:10px 14px; border-radius:4px; margin-top:28px; }
+  h3 { color:#000000; font-size:15px; margin-top:18px; margin-bottom:4px; font-weight:700; text-decoration:underline; }
+  p { font-size:14px; line-height:1.6; margin:6px 0; color:#000000; }
+  ul { margin:6px 0; padding-left: 20px; }
+  li { font-size:14px; line-height:1.6; margin-bottom:4px; color:#000000; }
+  .bold { font-weight:700; color:#000000; }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid #000000; color:#000000; font-size:11px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Cookie & Local Storage Policy</h1>
+  <hr class="top">
+  <p class="bold">Last updated: November 12, 2026</p>
+
+  <h2>Preamble</h2>
+  <p>This Policy describes how Savevia Pro, developed by Benashe Softworks, uses cookies, local storage technologies and cache on the user's device.</p>
+
+  <h2>Article 1 — Definition</h2>
+  <p>A cookie is a small piece of data stored on a user's device. In an Android application this includes web-view cookies, SharedPreferences, DataStore, the application cache, local databases and temporary files.</p>
+
+  <h2>Article 2 — Storage Technologies Used</h2>
+  <h3>2.1 SharedPreferences and DataStore</h3>
+  <ul>
+    <li>interface preferences (theme, language, display);</li>
+    <li>download settings;</li>
+    <li>status of permissions and of consents given.</li>
+  </ul>
+  <h3>2.2 Application Cache</h3>
+  <ul>
+    <li>thumbnail previews of recently viewed media;</li>
+    <li>temporary session data for link resolution;</li>
+    <li>temporary metadata and partial files related to downloads;</li>
+    <li>temporary files generated during video-to-audio conversion, video compression, photo-to-PDF creation and PDF compression, automatically deleted after the operation.</li>
+  </ul>
+  <p>The cache can be cleared via Settings &gt; Apps &gt; Savevia Pro &gt; Storage &gt; Clear cache.</p>
+  <h3>2.3 Local Database (Room / SQLite)</h3>
+  <p>Used to store the download history, entirely local and never synchronized with remote servers.</p>
+  <h3>2.4 Vault Security Data</h3>
+  <p>A cryptographic hash of the Vault PIN/password is stored locally in encrypted storage, and Vault files are encrypted with a key protected by the Android Keystore where supported. This data is never transmitted to the Studio or any third party, cannot be reversed to recover the PIN or password, and is deleted if the Application is uninstalled or its data is cleared.</p>
+  <h3>2.5 Download Engine Components</h3>
+  <p>The Application stores on the device the embedded download engine files (yt-dlp, FFmpeg) and their updates, as well as temporary files used during downloads.</p>
+  <h3>2.6 YouTube Summary — Local Data</h3>
+  <p>Summaries and transcripts are held temporarily in memory while the screen is open. If you export a summary as a PDF or DOCX file, it is saved to your device's storage like any other file created by the Application.</p>
+  <h3>2.7 Advertising-Frequency Counters</h3>
+  <p>A few counters stored in SharedPreferences limit how often ads are shown (number of actions and ads of the day, time of the last full-screen ad, session start). They stay on the device, are not linked to any identity and are never transmitted.</p>
+
+  <h2>Article 3 — Sign-In Cookies (Optional)</h2>
+  <p>If you choose to sign in to a platform through the Application's sign-in screen, that platform sets session cookies in the Application's web view on your device. The Application does not read or store your password. These cookies may be sent to the Studio's server along with your download request so that the server can access the content on your behalf (see the Privacy Policy, Article 5.4). They are not used for advertising or tracking and are not sold.</p>
+  <p>You can remove them at any time by signing out in the Application where available, or by clearing the Application's data in Android settings (Settings &gt; Apps &gt; Savevia Pro &gt; Storage &gt; Clear data). Signing in is optional.</p>
+
+  <h2>Article 4 — Third-Party Advertising Technologies</h2>
+  <p>Savevia Pro is free and funded by advertisements served by Unity Ads. The Unity Ads SDK may use the Android Advertising ID and similar identifiers, and may store small amounts of data on the device (for example in SharedPreferences or the application cache) to serve, measure and secure ads. Ad requests may also set cookies in the web views used to display ads.</p>
+  <p>Where required by law (European Economic Area, United Kingdom, Switzerland, certain US states), your consent choice is recorded on the device and applied to ad requests. Ad personalization can be limited in your device settings: Settings &gt; Privacy &gt; Ads (or Settings &gt; Google &gt; Ads), where the Advertising ID can also be reset or deleted. See also Article 7 of the Privacy Policy.</p>
+
+  <h2>Article 5 — Clearing Stored Data</h2>
+  <ul>
+    <li>Cache: Settings &gt; Apps &gt; Savevia Pro &gt; Storage &gt; Clear cache;</li>
+    <li>Cookies, preferences, history and Vault lock data: Settings &gt; Apps &gt; Savevia Pro &gt; Storage &gt; Clear data (this also resets the Vault; Vault files may become inaccessible);</li>
+    <li>Downloaded and created files: delete them from your device's storage or gallery; they are not removed automatically.</li>
+  </ul>
+
+  <h2>Article 6 — Local Data Retention Period</h2>
+  <ul>
+    <li>Application cache and temporary files: deleted automatically after operations or manually;</li>
+    <li>SharedPreferences and DataStore: kept as long as the Application is installed;</li>
+    <li>Download history: kept until manually deleted;</li>
+    <li>Downloaded media and files created by the Application: kept until deleted by the user;</li>
+    <li>Vault lock data: kept until the Vault is reset or the Application is uninstalled;</li>
+    <li>Sign-in cookies: kept in the web view until you sign out, they expire, or you clear the Application's data;</li>
+    <li>Advertising-frequency counters: reset every day or when the Application's data is cleared; the consent choice is kept until you change it or clear the Application's data.</li>
+  </ul>
+
+  <h2>Article 7 — No Other Third-Party Trackers</h2>
+  <p>Apart from Unity Ads, Savevia Pro does not integrate any third-party analytics or tracking technology for profiling purposes, and offers no billing-related technology as it has no in-app purchases.</p>
+
+  <h2>Article 8 — Contact</h2>
+  <p>Studio: Benashe Softworks<br>Email: benashesoftworks@gmail.com<br>Application: Savevia Pro</p>
+
+  <footer>© 2026 Benashe Softworks — benashesoftworks@gmail.com</footer>
+</div>
+</body>
+</html>
